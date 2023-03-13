@@ -63,6 +63,10 @@ h1, h2, h3 {
   background-size: 100%;
   background-position: 0 75%;
 }
+
+.menuContainer {
+  height: 750px;
+}
 .heroContainer {
   background-image: url("assets/images/food.jpg");
   background-repeat: no-repeat;
