@@ -1,0 +1,35 @@
+/* Please give the h1 some padding on two sides and zero on others, margin on the sides with no padding, thin purple border on sides without margin, gold background but the gold must be the exact color from the hufflepuff crest */
+h1 { 
+    padding: 0 10px 0 100px;
+    margin: 100px 0 10px 0;
+    border-right: solid 2px purple;
+    border-left: solid 2px purple;
+    background: #FFDB00;
+
+}
+/* Please give the h2 significant padding on the left and right, a red border on the left and right but the red must be the same from the mighty morphin power rangers logo, and an orange background, and the roboto font */
+
+h2 {
+    padding: 0 50px;    
+    border-right: solid 2px #eb1a25;
+    border-left: solid 2px #eb1a25;
+    background: orange;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Please give the section a thick magenta border on the left, 100px of padding on the top and bottom, and 200px of margin on every side without padding or border */
+
+section {
+    border-left: solid 20px magenta ;
+    padding: 100px 0;
+    margin: 0 200px 0 0;
+}
+
+/* Please make the spans have thin Dodger Blue borders, padding on the bottom and right, and light red background */
+
+span {
+    border: solid 2px #1E90FF;
+    padding: 0px 10px 10px 0px;
+    background: lightcoral;
+}

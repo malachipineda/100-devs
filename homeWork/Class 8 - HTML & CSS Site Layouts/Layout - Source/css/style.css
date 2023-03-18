@@ -1,0 +1,200 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+body * {
+  font-family: 'Lato', sans-serif;
+  color: rgb(48, 70, 89);
+}
+
+header, main, .features {
+  background: rgb(245, 249, 252);
+}
+
+.last {
+  background: #ffff;
+  margin: 1% 50% 0 20%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h2,nav li,section,.btn {
+  float: left;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+.col-1-2 img {
+  margin-left: -5%;
+}
+
+.hero span,
+.hero h1,
+.hero form,
+.hero p
+ {
+  margin: 2% 20% 2% 40%; 
+}
+.hero p {
+  margin-bottom: 10%;
+}
+
+.col-1-4 {
+  width: 15%;
+  font-size: 1.5rem;
+}
+
+.col-1-4 * {
+  margin: 3%;
+}
+section .ftr1 {
+  margin: 0 0 2% 20%;
+}
+h3 {
+  font-weight: 700;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: .25% 6% 3% 20%;
+}
+nav .btn {
+  float: left;
+  color: white;
+  background-color: rgb(48, 70, 89);
+  padding: 7.5px 20px; 
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: .25% 0 3% 11%;
+  border: none;
+}
+
+form .btn {
+  float: right;
+  color: white;
+  background-color: rgb(48, 70, 89);
+  padding: 7.5px 20px; 
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+}
+
+li {
+  margin: .25% 0 0 5%;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.features p {
+  line-height: 1.5;
+  margin-right: 20%;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.hero span {
+  font-size: 2rem;
+}
+
+a { 
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+input {
+  width: 75%;
+  background: #e1e9f0;
+  border: none;
+  padding: .75rem 4rem .75rem .75rem;
+}
+form .btn {
+  width: 25%;
+}
+section.col-1-4 a {
+  font-weight: 700;
+}
+a:hover {
+  color: rgba(48, 70, 89, .75);
+}
+.btn:hover {
+  background: rgba(48, 70, 89, .75);
+}
+.btn:active {
+  background: red;
+}
+
+.last p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin: 1% 15% 0 0
+}
+
+@media all and (max-width: 904px) {
+  html {
+    font-size: 46.875%;
+  }
+  body * {
+    float: none;
+  }
+  nav li,
+  nav button {
+    display: none;
+  }
+  main section.col-1-2,
+  .col-1-2 span,
+  .col-1-2 h1,
+  .col-1-2 form,
+  .col-1-2 p {
+    width: 100%;
+    margin: 2%;
+  }
+  .col-1-2 img {
+    width: 100%;
+    margin: 2%;
+  }
+  section.col-1-4,
+  section.clearfix.last {
+    width: 100%;
+    margin: 0;
+  }
+  form input,
+  form .btn {
+  width: 100%;
+  margin-top: 3%;
+  }
+}

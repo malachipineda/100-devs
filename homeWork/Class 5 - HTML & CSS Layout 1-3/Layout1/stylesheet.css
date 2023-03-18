@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+header,footer,section {
+    background: rgb(216, 216, 216);
+}
+header,footer {
+    height: 100px;
+    border: 1px solid black;
+    clear: both;
+}
+.toprow {
+    height: 200px;
+    width: 33.3333%;
+    border: 1px solid black;
+    float: left;
+}
+.bottomrow {
+    height: 300px;
+    width: 50%;
+    border: 1px solid black;
+    float: left;
+}

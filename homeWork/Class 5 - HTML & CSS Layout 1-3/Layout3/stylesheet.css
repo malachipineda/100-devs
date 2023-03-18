@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+header,footer,section {
+    background: rgb(216, 216, 216)
+}
+header,footer {
+    height: 100px;
+    border: 1px solid black;
+    clear: both;
+}
+.floatL {
+    height: 500px;
+    border: 1px solid black;
+    float: left;
+}
+.col20 {
+    width: 20%;
+}
+.col40 {
+    width: 40%;
+}

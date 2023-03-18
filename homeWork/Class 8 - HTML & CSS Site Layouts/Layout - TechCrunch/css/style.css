@@ -1,0 +1,155 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header,main,aside,.col-1-3 {
+  height: 600px;
+  float: left;
+  width: 10%;
+  font-family: "Source Sans Pro";
+}
+.col-1-3 {
+  height: 100%;
+}
+main {
+  width: 40%;
+  margin-bottom: 100px;
+}
+aside {
+  width: 25%;
+  margin: 10px 0 0 50px
+}
+a,span {
+  display: block;
+}
+.bottomrow {
+  margin-left: 10%;
+  border-top: 1px solid #f1f1f1;
+  clear: both;
+  padding-top: 30px;
+  width: 75%;
+}
+.col-1-3 {
+  width: 33.3333%;  
+}
+.col-1-3 h2 {
+  margin-right: 125px;  
+}
+.col-1-3 h4 {
+  font-size: 20px;
+  margin-right: 75px;
+} 
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+li {
+  list-style: none;
+}
+
+a,h4,.TimeDate,p {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+.ExtraCrunch {
+  margin: 10px 10px 10px 0px;
+  color: #f6a51e;
+}
+span.ExtraCrunch {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ddaa46;
+}
+
+h1,h2 { 
+  font-size: 33px;
+  margin: 5px 10px 5px 0px;
+  font-weight: 700;
+}
+
+.ImgResize {
+  max-width: 100%;
+  max-height: 100%;
+}
+nav > a, nav > img {
+  margin: 10px 10px 10px 20px;
+}
+
+nav .ExtraCrunch {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 20px;
+}
+  a + a {
+  margin-bottom: 40px;
+}
+
+nav li {
+  font-size: 25px;
+  max-width: 100%;
+  margin: 20px 10px 20px 20px;
+}
+
+li:nth-child(9) {
+  width: 15%;
+  padding: 0 0 20px 0;
+  border-bottom: #7a7a7a solid 1px;
+}
+.Author {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h2 {
+  margin: 0 10px 10px 0;
+}
+.spacer {
+  border-bottom: #f1f1f1 solid 1px;
+  padding: 5px 0 5px 0;
+
+}
+h1 {
+  font-size: 40px;
+}
+p { 
+  font-size: 23px;
+  margin: 10px 0 10px 0;
+}
+.TheLatest {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 5px 0;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+  nav ul {
+    display: none;
+  }
+  header {
+    height: 150px;
+  } 
+}
