@@ -1,0 +1,108 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header { 
+  border-bottom: solid 2px lightgray;
+  overflow: auto;
+}
+nav {
+  margin-left: 20%;
+}
+
+div, li, .logo, main > section, .col-1-2 {
+  float: left;
+}
+
+.col-1-3 {
+  width: 33.3333%;
+  margin-top: 1%;
+}
+.col-1-2 {
+  width: 50%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.logo {
+  width: 50px;
+  margin-top: 0;
+}
+
+.top-nav, .bottom-nav a, .top-nav a, p {
+  font-family: "Lato", serif, sans-serif;
+  font-weight: 700;
+  color: #2f66f3;
+  text-decoration: none; 
+}
+
+.top-nav a:hover {
+  color: #2f66f390;
+}
+
+.kids-learn {
+  width: 60%;
+  margin: 75px 0 0 45%;
+}
+
+h1,p {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 20% 45% 0 10%;
+  line-height: 1.25;
+}
+
+p,.bottom-nav {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+  margin: 2% 45% 2% 10%;
+  line-height: 2;
+}
+
+nav li {
+  margin: 5px;
+}
+
+.bottom-nav ul li a {
+  color: white;
+  background: #2f66f3;
+  padding: 7px 14px;
+  border-radius: 7%;
+}
+
+.bottom-nav ul li a:hover {
+  background: #2f66f390;
+  border: solid 2px #2f66f390;
+}
+.logo-txt a {
+  color: #0d2461;
+  font-size: 20px;
+}
+.logo-txt a:hover {
+  color: #0d246190;
+}

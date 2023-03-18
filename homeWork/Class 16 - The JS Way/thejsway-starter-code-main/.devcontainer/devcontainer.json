@@ -1,0 +1,40 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node.
+{
+	"name": "The JavaScript Way",
+	// A Dockerfile is used instead. More info: https://containers.dev/guide/dockerfile.
+	// "image": "mcr.microsoft.com/devcontainers/javascript-node:16-bullseye",
+	"build": {
+        // Path is relataive to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    },
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// Forward the web server port to access it from the host machine.
+	"forwardPorts": [80],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": {},
+	// Use 'postStartCommand' to run commands each time the container starts.
+	// Start the web server for executing JS code through the host browser.
+	"postStartCommand": "/etc/init.d/lighttpd start",
+	// Configure tool-specific properties.
+	"customizations": {
+		// Add Prettier and ESLint to VS Code.
+		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true,
+				"[javascript]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode"
+				  },
+				"eslint.enable": true
+			},
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode"
+			]
+		}
+	}
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
