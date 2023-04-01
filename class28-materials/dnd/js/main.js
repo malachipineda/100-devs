@@ -8,7 +8,15 @@ function getFetch(){
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
-       
+        console.log(data.subclasses)
+        
+        data.subclasses.forEach(obj => {
+            const li = document.createElement('li')
+            li.textContent = obj.name
+            document.querySelector('ul').appendChild(li)
+        })
+
+        // li.textContent = data.subclasses.forEach(element => document.querySelector('ul').innerText += ` ${element.name} `  )
       })
       .catch(err => {
           console.log(`error ${err}`)
