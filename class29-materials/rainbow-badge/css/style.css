@@ -1,0 +1,34 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  clear: both;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+ul, section{
+  float: left;
+  list-style: none;
+}
+
+ul::first-letter,li::first-letter{
+  text-transform: capitalize;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
