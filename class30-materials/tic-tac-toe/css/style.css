@@ -52,8 +52,13 @@ table {
 }
 
 td {
-  padding: 50px;  
-  border: solid black 1px
+  display: inline-flex;
+  height: 100px;
+  width: 100px;
+  padding: 0px;  
+  border: solid black 1px;
+  justify-content: center;
+  align-items: center;
 }
 
 td:hover {
