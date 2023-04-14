@@ -39,6 +39,6 @@ function sumOfValues(arr) {
 
 console.log(sumOfValues(['5', 3, '2', 1]))
 
-// const s = r => r.reduce((a,c)=>+a+ +c)
+// const s = r => r.reduce((a,c)=> +a+ +c)
 
 // console.log(s(['5', 3, '2', 1]))
