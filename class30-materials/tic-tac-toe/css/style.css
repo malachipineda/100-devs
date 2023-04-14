@@ -1,0 +1,66 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+#gameBoard, h1, .startGame {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* TIC TAC TOE BOARD
+/*******************************************/
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+td {
+  padding: 50px;  
+  border: solid black 1px
+}
+
+td:hover {
+  background-color: aqua;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
