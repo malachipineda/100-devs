@@ -7,11 +7,14 @@ async function flipCoin(){
   const data = await res.json()
 
   console.log(data);
-  document.querySelector("#flipResult").src = ''
+  document.querySelector("#coinImg").src = ''
+  document.querySelector("#coinImg").alt = ''
+  document.querySelector("#flipResult").textContent = ''
   document.querySelector("#flipAnim").src = data.flipAnim
   setTimeout(() => {
-    document.querySelector("#flipResult").src = data.coinImg
+    document.querySelector("#coinImg").src = data.coinImg
     document.querySelector("#flipAnim").src = ''
-  }, 3000)
-  document.querySelector("#personOccupation").textContent = data.currentOccupation
+    document.querySelector("#coinImg").alt = data.flipResult
+    document.querySelector("#flipResult").textContent = data.flipResult
+  }, 2700)
 }
