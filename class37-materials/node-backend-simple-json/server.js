@@ -45,8 +45,8 @@ const server = http.createServer((req, res) => {
         const objToJson = {
           flipResult: flipResult,
           coinImg: coinImg,
-          flipAnim: 'https://i.pinimg.com/originals/a4/89/03/a489031059b5bee46bbbea0f02856309.gif' 
-          //https://1.bp.blogspot.com/-JuSINkTeoCo/WnSxT2cpdcI/AAAAAAAAPes/iD97Aq6_lwQnMyYcym195a8GRedfOkjZgCLcBGAs/s1600/DistantBronzeAmericanwarmblood-size_restricted.gif'
+          flipAnim: //'https://i.pinimg.com/originals/a4/89/03/a489031059b5bee46bbbea0f02856309.gif' 
+          'https://1.bp.blogspot.com/-JuSINkTeoCo/WnSxT2cpdcI/AAAAAAAAPes/iD97Aq6_lwQnMyYcym195a8GRedfOkjZgCLcBGAs/s1600/DistantBronzeAmericanwarmblood-size_restricted.gif'
         }
         res.end(JSON.stringify(objToJson));
       } else if(params['coin'] != 'heads'){
